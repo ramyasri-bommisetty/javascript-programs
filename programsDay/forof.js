@@ -19,10 +19,11 @@ for(const num of numbers){
 // 2. Count and print the number of vowels in the string.
 
 let string ="hello";
-if(char ='a'||'e'||'i'||'o'||'u')
+let vowels;
+if(vowels ='a'||'e'||'i'||'o'||'u')
 {
-for (let char of string ){
-    console.log(char);
+for (let vowels of string ){
+    console.log(vowels);
 }
 
 }

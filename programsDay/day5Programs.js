@@ -60,19 +60,21 @@ for (let num of array3) {
 }
 // Write a function that returns the Fibonacci sequence up to n terms.
 
-function fibonacci(n1,n2,count){
-    if(count <3)
-    {
-        console.log(n1);
-        console.log(n2);
+function fibonacci(n1, n2, count) {
+    let result = [];
+
+    if (count >= 1) result.push(n1);
+    if (count >= 2) result.push(n2);
+
+    for (let i = 3; i <= count; i++) {
+        let next = n1 + n2;
+        result.push(next);
+        n1 = n2;
+        n2 = next;
     }
-    else
-{    for (let i = 3; i <= count; i++) {
-    let next = n1 + n2;
-    console.log(next);
-    n1 = n2;
-    n2 = next;
+
+    return result;
 }
-}
-}
-fibonacci(1,1,10);
+
+// Example usage
+console.log(fibonacci(1, 1, 10));

@@ -5,11 +5,11 @@
 // 1. Create an array of numbers `[1, 2, 3, 4, 5]`. Use `for...of` to print each number.
 // 2. Multiply each number by 2 and print the result.
 
-let numbers =[1,2,3,4,5];
-for(const num of numbers){
+// let numbers =[1,2,3,4,5];
+// for(const num of numbers){
     
-    console.log(num * 2);
-}
+//     console.log(num * 2);
+// }
 
 // ---
 
@@ -18,16 +18,16 @@ for(const num of numbers){
 // 1. Take a string `"hello"`. Print each character.
 // 2. Count and print the number of vowels in the string.
 
-let string ="hello";
-let vowels;
-if(vowels ='a'||'e'||'i'||'o'||'u')
-{
-for (let vowels of string ){
-    console.log(vowels);
-}
+// let string ="hello";
+// let vowels;
+// if(vowels ='a'||'e'||'i'||'o'||'u')
+// {
+// for (let vowels of string ){
+//     console.log(vowels);
+// }
 
-}
-// ---
+// }
+// // ---
 
 // ## **Day 3 – Conditional inside loop**
 
@@ -102,3 +102,21 @@ for (let vowels of string ){
 
 // ---
 
+const car = {
+  brand: "Toyota",
+  year: 2020
+};
+
+let key = "brand";
+console.log(car[key]);
+
+key = "year";
+console.log(car[key]);
+
+const student={
+name: "Anu",
+marks: 85,
+grade: "A"
+}
+let keyToPrint="marks";
+console.log(student[keyToPrint]);                   
